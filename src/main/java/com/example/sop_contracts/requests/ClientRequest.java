@@ -14,24 +14,24 @@ public class ClientRequest extends BaseEntityRequest {
     @NotNull
     private String cif;
 
-    @Schema(description = "The full name of the client", example = "John Doe")
+    @Schema(description = "The full name of the client", example = "Ivanov Ivan Ivanovich")
     @NotNull
     private String fullName;
 
-    @Schema(description = "The age of the client", example = "30")
+    @Schema(description = "The age of the client", example = "18")
     @NotNull
     private Integer age;
 
-    @Schema(description = "The email address of the client", example = "john.doe@example.com")
+    @Schema(description = "The email address of the client", example = "ivan@example.com")
     @NotNull
     @Email
     private String email;
 
-    @Schema(description = "The annual income of the client", example = "50000.00")
+    @Schema(description = "The annual income of the client", example = "100000.00")
     @NotNull
     private BigDecimal annualIncome;
 
-    @Schema(description = "The total monthly debt payment of the client", example = "1500.00")
+    @Schema(description = "The total monthly debt payment of the client", example = "1000.00")
     @NotNull
     private BigDecimal totalMonthlyDebtPayment;
 
@@ -39,11 +39,9 @@ public class ClientRequest extends BaseEntityRequest {
     @NotNull
     private EmploymentStatus employmentStatus;
 
-    // Default constructor
     public ClientRequest() {
     }
 
-    // Constructor with all fields
     public ClientRequest(String cif,
                          String fullName,
                          Integer age,

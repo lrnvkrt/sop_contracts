@@ -26,10 +26,8 @@ public class ApplicationCreationRequest extends BaseEntityRequest {
     @NotNull
     private UUID client;
 
-    // Default constructor
     protected ApplicationCreationRequest() {}
 
-    // Constructor with all fields
     public ApplicationCreationRequest(BigDecimal amount, Purpose purpose, Integer term, UUID client) {
         this.amount = amount;
         this.purpose = purpose;
